@@ -308,7 +308,7 @@ SUBDIRS = \
 	disassembler \
 	driver \
 	emulator \
-	timing
+	timing 
 
 all: all-recursive
 

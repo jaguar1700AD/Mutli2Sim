@@ -2808,9 +2808,12 @@ void WorkItem::ISA_V_ADD_F32_Impl(Instruction *instruction)
 	else
 		s0.as_uint = ReadReg(INST.src0);
 	s1.as_uint = ReadVReg(INST.vsrc1);
-
-	// Calculate the sum.
-	sum.as_float = s0.as_float + s1.as_float;
+	
+	// My Code
+	int lut_num = id_in_wavefront % 16;
+	float f1, f2;
+	if (table[lut_num].find(s0.as_float, s1.as_float, f1, f2)) sum.as_float = f1 + f2;
+	else sum.as_float = s0.as_float + s1.as_float;
 
 	// Write the results.
 	WriteVReg(INST.vdst, sum.as_uint);

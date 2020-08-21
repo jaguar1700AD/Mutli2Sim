@@ -82,7 +82,8 @@ subdir = .
 DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog \
 	$(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure $(am__configure_deps) COPYING TODO \
-	compile config.guess config.sub install-sh missing ltmain.sh
+	compile config.guess config.sub depcomp install-sh missing \
+	ltmain.sh
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
 	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
@@ -230,16 +231,16 @@ AUTOCONF = ${SHELL} /tmp/multi2sim/missing autoconf
 AUTOHEADER = ${SHELL} /tmp/multi2sim/missing autoheader
 AUTOMAKE = ${SHELL} /tmp/multi2sim/missing automake-1.14
 AWK = mawk
-CC = gcc -g
-CCAS = gcc -g
+CC = gcc
+CCAS = gcc
 CCASDEPMODE = depmode=gcc3
 CCASFLAGS = -g -O2
 CCDEPMODE = depmode=gcc3
 CFLAGS = -msse2 -O3 -std=gnu99 -DNDEBUG
-CPP = gcc -gE
+CPP = gcc -E
 CPPFLAGS = 
-CXX = g++ -g
-CXXCPP = g++ -gE
+CXX = g++
+CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -msse2 -std=gnu++0x -O3 -DNDEBUG
 CYGPATH_W = echo
@@ -308,8 +309,8 @@ abs_srcdir = /tmp/multi2sim
 abs_top_builddir = /tmp/multi2sim
 abs_top_srcdir = /tmp/multi2sim
 ac_ct_AR = ar
-ac_ct_CC = gcc -g
-ac_ct_CXX = g++ -g
+ac_ct_CC = gcc
+ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .

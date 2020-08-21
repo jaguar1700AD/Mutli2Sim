@@ -2,4 +2,4 @@ SUBDIRS = \
 	disassembler \
 	driver \
 	emulator \
-	timing
+	timing 

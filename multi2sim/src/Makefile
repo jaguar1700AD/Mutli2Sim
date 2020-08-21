@@ -251,16 +251,16 @@ AUTOCONF = ${SHELL} /tmp/multi2sim/missing autoconf
 AUTOHEADER = ${SHELL} /tmp/multi2sim/missing autoheader
 AUTOMAKE = ${SHELL} /tmp/multi2sim/missing automake-1.14
 AWK = mawk
-CC = gcc -g
-CCAS = gcc -g
+CC = gcc
+CCAS = gcc
 CCASDEPMODE = depmode=gcc3
 CCASFLAGS = -g -O2
 CCDEPMODE = depmode=gcc3
 CFLAGS = -msse2 -O3 -std=gnu99 -DNDEBUG
-CPP = gcc -gE
+CPP = gcc -E
 CPPFLAGS = 
-CXX = g++ -g
-CXXCPP = g++ -gE
+CXX = g++
+CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -msse2 -std=gnu++0x -O3 -DNDEBUG
 CYGPATH_W = echo
@@ -329,8 +329,8 @@ abs_srcdir = /tmp/multi2sim/src
 abs_top_builddir = /tmp/multi2sim
 abs_top_srcdir = /tmp/multi2sim
 ac_ct_AR = ar
-ac_ct_CC = gcc -g
-ac_ct_CXX = g++ -g
+ac_ct_CC = gcc
+ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .

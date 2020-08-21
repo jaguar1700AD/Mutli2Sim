@@ -23,6 +23,8 @@
 #include <arch/southern-islands/disassembler/Instruction.h>
 #include <memory/Memory.h>
 
+//My Code
+#include <arch/southern-islands/lut/lut.h>
 
 namespace SI
 {
@@ -45,6 +47,8 @@ public:
 class WorkItem
 {
 public:
+	// My Code
+	static vector <lut> table;
 
 	/// Memory accesses types
 	enum MemoryAccessType
