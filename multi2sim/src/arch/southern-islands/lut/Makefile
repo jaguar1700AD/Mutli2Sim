@@ -1,9 +1,0 @@
-all: lib
-
-lib: lut.cc lut.h main.cc
-	g++ -c -o lut.o -g lut.cc --std=c++11
-	ar rcs liblut.a lut.o
-	g++ -c -o main.o -g main.cc --std=c++11
-	g++ -o main main.o liblut.a
-
-clean: rm *.o *.a main

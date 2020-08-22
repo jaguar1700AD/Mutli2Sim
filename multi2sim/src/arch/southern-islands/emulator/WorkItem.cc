@@ -229,12 +229,11 @@ float WorkItem::Float16to32(unsigned short value)
 	return v.f;
 }
 
+// My Code
+vector <lut> WorkItem::table (32 * 4 * 16, lut(128, 1e5));
 
 WorkItem::WorkItem(Wavefront *wavefront, int id)
 {
-	//My Code
-	for(int i = 0; i < 16; i++) table.push_back(lut(32, 1e-2));
-	
 	// Initialization
 	this->id = id;
 	this->wavefront = wavefront;

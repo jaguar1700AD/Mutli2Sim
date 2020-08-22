@@ -24,7 +24,7 @@
 #include <memory/Memory.h>
 
 //My Code
-#include <arch/southern-islands/lut/lut.h>
+#include "lut.h"
 
 namespace SI
 {

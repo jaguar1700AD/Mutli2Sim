@@ -164,7 +164,7 @@ Driver.o: Driver.cc /usr/include/stdc-predef.h \
  ../../../src/arch/southern-islands/emulator/Wavefront.h \
  ../../../src/arch/southern-islands/disassembler/Instruction.h \
  ../../../src/arch/southern-islands/emulator/WorkItem.h \
- ../../../src/arch/southern-islands/lut/lut.h \
+ ../../../src/arch/southern-islands/emulator/lut.h \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/stdc++.h \
  /usr/include/c++/4.8/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
@@ -711,7 +711,7 @@ Driver.o: Driver.cc /usr/include/stdc-predef.h \
 
 ../../../src/arch/southern-islands/emulator/WorkItem.h:
 
-../../../src/arch/southern-islands/lut/lut.h:
+../../../src/arch/southern-islands/emulator/lut.h:
 
 /usr/include/x86_64-linux-gnu/c++/4.8/bits/stdc++.h:
 

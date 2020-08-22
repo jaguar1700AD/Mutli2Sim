@@ -28,6 +28,8 @@
 #include "WorkGroup.h"
 #include "WorkItem.h"
 
+// My Code
+#include "../timing/ComputeUnit.h"
 
 namespace SI
 {
@@ -2810,10 +2812,17 @@ void WorkItem::ISA_V_ADD_F32_Impl(Instruction *instruction)
 	s1.as_uint = ReadVReg(INST.vsrc1);
 	
 	// My Code
-	int lut_num = id_in_wavefront % 16;
+	// ..................................................................................
+	int lane_num = id_in_wavefront % 16;
+	WavefrontPool* wp = getWavefront()->getWavefrontPoolEntry()->getWavefrontPool();
+	int simd_num = wp->getId();
+	int cu_num = wp->getComputeUnit()->getIndex();
+	int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
+
 	float f1, f2;
 	if (table[lut_num].find(s0.as_float, s1.as_float, f1, f2)) sum.as_float = f1 + f2;
 	else sum.as_float = s0.as_float + s1.as_float;
+	// ................................................................................
 
 	// Write the results.
 	WriteVReg(INST.vdst, sum.as_uint);

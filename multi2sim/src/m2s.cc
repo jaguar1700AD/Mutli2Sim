@@ -501,6 +501,13 @@ void MainLoop()
 
 	// Restore default signal handlers
 	esim->DisableSignals();
+
+	// My Code
+	vector <lut> vec = SI::WorkItem::table;
+	for(int i = 0; i < vec.size(); i++)
+	{
+		cout << "Hits " << i << " : " << vec[i].get_num_hits() << " / " << vec[i].get_num_ops() << endl; 
+	}
 }
 
 

@@ -18,8 +18,8 @@ libemulator_a_SOURCES = \
 	WorkItem.h \
 	WorkItemIsa.cc \
 	\
-	../lut/lut.cc \
-	../lut/lut.h
+	lut.cc \
+	lut.h
 
 AM_CPPFLAGS = @M2S_INCLUDES@
 

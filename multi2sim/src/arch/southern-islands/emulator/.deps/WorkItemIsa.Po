@@ -162,7 +162,7 @@ WorkItemIsa.o: WorkItemIsa.cc /usr/include/stdc-predef.h \
  ../../../../src/arch/southern-islands/disassembler/Instruction.h \
  ../../../../src/arch/southern-islands/disassembler/Instruction.def \
  ../../../../src/arch/southern-islands/emulator/WorkItem.h \
- ../../../../src/arch/southern-islands/lut/lut.h \
+ ../../../../src/arch/southern-islands/emulator/lut.h \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/stdc++.h \
  /usr/include/c++/4.8/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
@@ -251,7 +251,28 @@ WorkItemIsa.o: WorkItemIsa.cc /usr/include/stdc-predef.h \
  /usr/include/c++/4.8/typeindex /usr/include/c++/4.8/unordered_set \
  /usr/include/c++/4.8/bits/unordered_set.h \
  ../../../../src/arch/southern-islands/disassembler/Instruction.def \
- WorkItem.h
+ WorkItem.h ../timing/ComputeUnit.h ../../../../src/memory/Module.h \
+ ../../../../src/lib/esim/Queue.h ../../../../src/network/EndNode.h \
+ ../../../../src/network/Node.h ../../../../src/network/System.h \
+ ../../../../src/lib/cpp/IniFile.h ../../../../src/lib/cpp/Debug.h \
+ ../../../../src/lib/cpp/String.h ../../../../src/lib/esim/Event.h \
+ ../../../../src/lib/esim/Trace.h /usr/include/zlib.h \
+ /usr/include/x86_64-linux-gnu/zconf.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
+ ../../../../src/network/Network.h ../../../../src/network/Bus.h \
+ ../../../../src/network/Connection.h ../../../../src/network/Buffer.h \
+ ../../../../src/network/Graph.h ../../../../src/lib/cpp/Graph.h \
+ ../../../../src/network/Link.h ../../../../src/network/Message.h \
+ ../../../../src/network/Packet.h ../../../../src/network/RoutingTable.h \
+ ../../../../src/memory/Cache.h ../../../../src/lib/cpp/List.h \
+ ../../../../src/memory/Directory.h ../../../../src/lib/cpp/Bitmap.h \
+ ../timing/BranchUnit.h ../timing/ExecutionUnit.h ../timing/Uop.h \
+ ../timing/FetchBuffer.h ../timing/LdsUnit.h ../timing/SimdUnit.h \
+ ../timing/ScalarUnit.h ../timing/VectorMemoryUnit.h \
+ ../timing/WavefrontPool.h
 
 /usr/include/stdc-predef.h:
 
@@ -699,7 +720,7 @@ Wavefront.h:
 
 ../../../../src/arch/southern-islands/emulator/WorkItem.h:
 
-../../../../src/arch/southern-islands/lut/lut.h:
+../../../../src/arch/southern-islands/emulator/lut.h:
 
 /usr/include/x86_64-linux-gnu/c++/4.8/bits/stdc++.h:
 
@@ -934,3 +955,87 @@ Wavefront.h:
 ../../../../src/arch/southern-islands/disassembler/Instruction.def:
 
 WorkItem.h:
+
+../timing/ComputeUnit.h:
+
+../../../../src/memory/Module.h:
+
+../../../../src/lib/esim/Queue.h:
+
+../../../../src/network/EndNode.h:
+
+../../../../src/network/Node.h:
+
+../../../../src/network/System.h:
+
+../../../../src/lib/cpp/IniFile.h:
+
+../../../../src/lib/cpp/Debug.h:
+
+../../../../src/lib/cpp/String.h:
+
+../../../../src/lib/esim/Event.h:
+
+../../../../src/lib/esim/Trace.h:
+
+/usr/include/zlib.h:
+
+/usr/include/x86_64-linux-gnu/zconf.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
+../../../../src/network/Network.h:
+
+../../../../src/network/Bus.h:
+
+../../../../src/network/Connection.h:
+
+../../../../src/network/Buffer.h:
+
+../../../../src/network/Graph.h:
+
+../../../../src/lib/cpp/Graph.h:
+
+../../../../src/network/Link.h:
+
+../../../../src/network/Message.h:
+
+../../../../src/network/Packet.h:
+
+../../../../src/network/RoutingTable.h:
+
+../../../../src/memory/Cache.h:
+
+../../../../src/lib/cpp/List.h:
+
+../../../../src/memory/Directory.h:
+
+../../../../src/lib/cpp/Bitmap.h:
+
+../timing/BranchUnit.h:
+
+../timing/ExecutionUnit.h:
+
+../timing/Uop.h:
+
+../timing/FetchBuffer.h:
+
+../timing/LdsUnit.h:
+
+../timing/SimdUnit.h:
+
+../timing/ScalarUnit.h:
+
+../timing/VectorMemoryUnit.h:
+
+../timing/WavefrontPool.h:

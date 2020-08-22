@@ -127,10 +127,9 @@ am__v_AR_0 = @echo "  AR      " $@;
 am__v_AR_1 = 
 libemulator_a_AR = $(AR) $(ARFLAGS)
 libemulator_a_LIBADD =
-am__dirstamp = $(am__leading_dot)dirstamp
 am_libemulator_a_OBJECTS = Emulator.$(OBJEXT) NDRange.$(OBJEXT) \
 	Wavefront.$(OBJEXT) WorkGroup.$(OBJEXT) WorkItem.$(OBJEXT) \
-	WorkItemIsa.$(OBJEXT) ../lut/lut.$(OBJEXT)
+	WorkItemIsa.$(OBJEXT) lut.$(OBJEXT)
 libemulator_a_OBJECTS = $(am_libemulator_a_OBJECTS)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -368,8 +367,8 @@ libemulator_a_SOURCES = \
 	WorkItem.h \
 	WorkItemIsa.cc \
 	\
-	../lut/lut.cc \
-	../lut/lut.h
+	lut.cc \
+	lut.h
 
 AM_CPPFLAGS =  -I$(top_srcdir) -I$(top_srcdir)/src 
 all: all-am
@@ -437,14 +436,6 @@ uninstall-libLIBRARIES:
 
 clean-libLIBRARIES:
 	-test -z "$(lib_LIBRARIES)" || rm -f $(lib_LIBRARIES)
-../lut/$(am__dirstamp):
-	@$(MKDIR_P) ../lut
-	@: > ../lut/$(am__dirstamp)
-../lut/$(DEPDIR)/$(am__dirstamp):
-	@$(MKDIR_P) ../lut/$(DEPDIR)
-	@: > ../lut/$(DEPDIR)/$(am__dirstamp)
-../lut/lut.$(OBJEXT): ../lut/$(am__dirstamp) \
-	../lut/$(DEPDIR)/$(am__dirstamp)
 
 libemulator.a: $(libemulator_a_OBJECTS) $(libemulator_a_DEPENDENCIES) $(EXTRA_libemulator_a_DEPENDENCIES) 
 	$(AM_V_at)-rm -f libemulator.a
@@ -453,18 +444,17 @@ libemulator.a: $(libemulator_a_OBJECTS) $(libemulator_a_DEPENDENCIES) $(EXTRA_li
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
-	-rm -f ../lut/*.$(OBJEXT)
 
 distclean-compile:
 	-rm -f *.tab.c
 
-include ../lut/$(DEPDIR)/lut.Po
 include ./$(DEPDIR)/Emulator.Po
 include ./$(DEPDIR)/NDRange.Po
 include ./$(DEPDIR)/Wavefront.Po
 include ./$(DEPDIR)/WorkGroup.Po
 include ./$(DEPDIR)/WorkItem.Po
 include ./$(DEPDIR)/WorkItemIsa.Po
+include ./$(DEPDIR)/lut.Po
 
 .cc.o:
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -611,8 +601,6 @@ clean-generic:
 distclean-generic:
 	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
-	-rm -f ../lut/$(DEPDIR)/$(am__dirstamp)
-	-rm -f ../lut/$(am__dirstamp)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
@@ -623,7 +611,7 @@ clean-am: clean-generic clean-libLIBRARIES clean-libtool \
 	mostlyclean-am
 
 distclean: distclean-am
-	-rm -rf ../lut/$(DEPDIR) ./$(DEPDIR)
+	-rm -rf ./$(DEPDIR)
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-tags
@@ -669,7 +657,7 @@ install-ps-am:
 installcheck-am:
 
 maintainer-clean: maintainer-clean-am
-	-rm -rf ../lut/$(DEPDIR) ./$(DEPDIR)
+	-rm -rf ./$(DEPDIR)
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
