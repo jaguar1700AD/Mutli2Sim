@@ -72,7 +72,8 @@ ComputeUnit::ComputeUnit(int index, Gpu *gpu) :
 	{
 		wavefront_pools[i] = misc::new_unique<WavefrontPool>(i, this);
 		fetch_buffers[i] = misc::new_unique<FetchBuffer>(i, this);
-		simd_units[i] = misc::new_unique<SimdUnit>(this);
+		// My Code
+		simd_units[i] = misc::new_unique<SimdUnit>(i, this);
 	}
 }
 

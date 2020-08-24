@@ -2820,7 +2820,7 @@ void WorkItem::ISA_V_ADD_F32_Impl(Instruction *instruction)
 	int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
 	float f1, f2;
-	if (table[lut_num].find(s0.as_float, s1.as_float, f1, f2)) sum.as_float = f1 + f2;
+	if ((*table)[lut_num].find(s0.as_float, s1.as_float, f1, f2)) sum.as_float = f1 + f2;
 	else sum.as_float = s0.as_float + s1.as_float;
 	// ................................................................................
 

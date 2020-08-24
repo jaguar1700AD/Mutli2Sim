@@ -48,7 +48,7 @@ class WorkItem
 {
 public:
 	// My Code
-	static vector <lut> table;
+	static vector <lut>* table;
 
 	/// Memory accesses types
 	enum MemoryAccessType

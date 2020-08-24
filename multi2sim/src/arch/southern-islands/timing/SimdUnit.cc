@@ -25,6 +25,9 @@
 #include "Gpu.h"
 #include "Timing.h"
 
+// My Code
+#include "../emulator/lut.h"
+
 
 namespace SI
 {
@@ -190,6 +193,38 @@ void SimdUnit::Execute()
 		uop->execute_ready = compute_unit->getTiming()->getCycle() +
 				read_exec_write_latency;
 
+		// My Code
+		// ................................................................
+
+		int simd_num = getId(); int cu_num = getComputeUnit()->getIndex();
+		int start_lut = (cu_num * 4 * 16) + (simd_num * 16);
+		
+		vector <lut>* store = WorkItem::table;
+		int min_sub = 100;
+		for(int i = start_lut; i < start_lut + 16; i++)
+		{
+			vector <bool> hits = (*store)[i].get_recent_hits();
+			assert(hits.size() == 4);
+
+			int sub = 0;
+			if (hits[0] == true || hits[1] == true) sub += 1;
+			if (hits[2] == true)
+			{
+				if (hits[3] == true) sub += 2;
+				else sub += 1;
+			}
+			else
+			{
+				if (hits[3] == true) sub += 1;
+			}
+	
+			if (sub < min_sub) min_sub = sub;
+		}
+		uop->execute_ready -= min_sub;
+
+		// .................................................................		
+		
+		
 		// Update wavefront pool entry
 		uop->getWavefrontPoolEntry()->ready_next_cycle = true;
 

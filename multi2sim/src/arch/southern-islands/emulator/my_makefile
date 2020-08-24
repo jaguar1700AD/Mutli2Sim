@@ -7,4 +7,4 @@ lib: lut.cc lut.h main.cc
 	g++ -o main main.o liblut.a
 
 clean: 
-	rm *.o *.a main
+	rm main.o lut.o liblut.a main

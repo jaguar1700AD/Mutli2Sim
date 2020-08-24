@@ -13,9 +13,12 @@ int main()
 	{
 		//cout << i << " iteration" << endl;
 		table.find(A[i], B[i], store1, store2);
-		cout << A[i] << " " << B[i] << " " << store1 << " " << store2 << " Hit/Miss: " << table.get_recent_hit() << endl;	
+		cout << A[i] << " " << B[i] << " " << store1 << " " << store2 << endl;	
 	}	
 
 	table.print();
+	vector <bool> hits = table.get_recent_hits();
+	for (int i = 0; i < A.size(); i++) cout << hits[i] << " ";
+	cout << endl;
 	cout << table.get_num_hits() << " " << table.get_num_misses() << endl;
 }

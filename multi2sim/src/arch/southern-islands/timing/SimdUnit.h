@@ -32,6 +32,9 @@ class ComputeUnit;
 /// Class representing the SIMD unit of a compute unit
 class SimdUnit : public ExecutionUnit
 {
+	// My Code
+	int id;
+	
 	// Variable number of decoded Uops
 	std::deque<std::unique_ptr<Uop>> decode_buffer;
 
@@ -83,11 +86,15 @@ public:
 	//
 	// Class members
 	//
-
+	
+	// My Code
+	int getId() { return id; }
 
 	/// Constructor
-	SimdUnit(ComputeUnit *compute_unit) : ExecutionUnit(compute_unit)
+	// My Code
+	SimdUnit(int id, ComputeUnit *compute_unit) : ExecutionUnit(compute_unit)
 	{
+		this->id = id;
 	}
 
 	/// Run the actions occurring in one cycle

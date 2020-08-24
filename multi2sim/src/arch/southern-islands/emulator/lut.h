@@ -31,7 +31,7 @@ class lut
 	unsigned long int num_hits;
 	unsigned long int num_misses;
 	
-	bool recent_hit; // True if most recent access was a hit
+	vector <bool> recent_hits; 
 	
 	float abs_diff(elem v1, elem v2) { return abs(v1.data.as_float[0] - v2.data.as_float[0]) + abs(v1.data.as_float[1] - v2.data.as_float[1]); }
 	set<elem>::iterator get_closest(elem V);
@@ -56,6 +56,6 @@ public:
 	unsigned long int get_num_hits() { return num_hits; }
 	unsigned long int get_num_misses() { return num_misses; }
 	unsigned long int get_num_ops() { return num_hits + num_misses; }
-	bool get_recent_hit() {return recent_hit; }
+	vector <bool> get_recent_hits() {vector <bool> vec = recent_hits; recent_hits.clear(); return vec; } // Automatically clear stored recent_hits when they are read
 
 };
