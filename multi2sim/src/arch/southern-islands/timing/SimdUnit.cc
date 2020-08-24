@@ -25,10 +25,6 @@
 #include "Gpu.h"
 #include "Timing.h"
 
-// My Code
-#include "../emulator/lut.h"
-
-
 namespace SI
 {
 
@@ -220,6 +216,7 @@ void SimdUnit::Execute()
 	
 			if (sub < min_sub) min_sub = sub;
 		}
+		//cout << "Min Sub: " << min_sub << endl;
 		uop->execute_ready -= min_sub;
 
 		// .................................................................		
