@@ -2820,7 +2820,7 @@ void WorkItem::ISA_V_ADD_F32_Impl(Instruction *instruction)
 	int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
 	float f1, f2;
-	if ((*table)[lut_num].find(s0.as_float, s1.as_float, f1, f2)) sum.as_float = f1 + f2;
+	if ((*table)[lut_num][0].find(s0.as_float, s1.as_float, f1, f2)) sum.as_float = f1 + f2;
 	else sum.as_float = s0.as_float + s1.as_float;
 	// ................................................................................
 
@@ -2851,8 +2851,18 @@ void WorkItem::ISA_V_SUB_F32_Impl(Instruction *instruction)
 		s0.as_uint = ReadReg(INST.src0);
 	s1.as_uint = ReadVReg(INST.vsrc1);
 
-	// Calculate the difference.
-	dif.as_float = s0.as_float - s1.as_float;
+	// My Code
+        // ..................................................................................
+        int lane_num = id_in_wavefront % 16;
+        WavefrontPool* wp = getWavefront()->getWavefrontPoolEntry()->getWavefrontPool();
+        int simd_num = wp->getId();
+        int cu_num = wp->getComputeUnit()->getIndex();
+        int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
+
+        float f1, f2;
+        if ((*table)[lut_num][1].find(s0.as_float, s1.as_float, f1, f2)) dif.as_float = f1 - f2;
+        else dif.as_float = s0.as_float - s1.as_float;
+        // ................................................................................
 
 	// Write the results.
 	WriteVReg(INST.vdst, dif.as_uint);
@@ -2957,8 +2967,18 @@ void WorkItem::ISA_V_MUL_F32_Impl(Instruction *instruction)
 		s0.as_uint = ReadReg(INST.src0);
 	s1.as_uint = ReadVReg(INST.vsrc1);
 
-	// Calculate the product.
-	product.as_float = s0.as_float * s1.as_float;
+	// My Code
+        // ..................................................................................
+        int lane_num = id_in_wavefront % 16;
+        WavefrontPool* wp = getWavefront()->getWavefrontPoolEntry()->getWavefrontPool();
+        int simd_num = wp->getId();
+        int cu_num = wp->getComputeUnit()->getIndex();
+        int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
+
+        float f1, f2;
+        if ((*table)[lut_num][2].find(s0.as_float, s1.as_float, f1, f2)) product.as_float = f1 * f2;
+        else product.as_float = s0.as_float * s1.as_float;
+        // ................................................................................
 
 	// Write the results.
 	WriteVReg(INST.vdst, product.as_uint);
@@ -4311,8 +4331,18 @@ void WorkItem::ISA_V_ADD_F32_VOP3a_Impl(Instruction *instruction)
 		s1.as_float = -s1.as_float;
 	assert(!(INST.neg & 4));
 
-	// Calculate the sum.
-	sum.as_float = s0.as_float + s1.as_float;
+	// My Code
+        // ..................................................................................
+        int lane_num = id_in_wavefront % 16;
+        WavefrontPool* wp = getWavefront()->getWavefrontPoolEntry()->getWavefrontPool();
+        int simd_num = wp->getId();
+        int cu_num = wp->getComputeUnit()->getIndex();
+        int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
+
+        float f1, f2;
+        if ((*table)[lut_num][0].find(s0.as_float, s1.as_float, f1, f2)) sum.as_float = f1 + f2;
+        else sum.as_float = s0.as_float + s1.as_float;
+        // ................................................................................
 
 	// Write the results.
 	WriteVReg(INST.vdst, sum.as_uint);
@@ -4433,8 +4463,18 @@ void WorkItem::ISA_V_MUL_F32_VOP3a_Impl(Instruction *instruction)
 		s1.as_float = -s1.as_float;
 	assert(!(INST.neg & 4));
 
-	// Calculate the result.
-	result.as_float = s0.as_float * s1.as_float;
+	// My Code
+        // ..................................................................................
+        int lane_num = id_in_wavefront % 16;
+        WavefrontPool* wp = getWavefront()->getWavefrontPoolEntry()->getWavefrontPool();
+        int simd_num = wp->getId();
+        int cu_num = wp->getComputeUnit()->getIndex();
+        int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
+
+        float f1, f2;
+        if ((*table)[lut_num][2].find(s0.as_float, s1.as_float, f1, f2)) result.as_float = f1 * f2;
+        else result.as_float = s0.as_float * s1.as_float;
+        // ................................................................................
 
 	// Write the results.
 	WriteVReg(INST.vdst, result.as_uint);

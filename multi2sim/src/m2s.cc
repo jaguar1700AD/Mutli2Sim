@@ -503,10 +503,13 @@ void MainLoop()
 	esim->DisableSignals();
 
 	// My Code
-	vector <lut>* vec = SI::WorkItem::table;
+	vector <vector<lut>>* vec = SI::WorkItem::table;
 	for(int i = 0; i < (*vec).size(); i++)
 	{
-		cout << "Hits " << i << " : " << (*vec)[i].get_num_hits() << " / " << (*vec)[i].get_num_ops() << endl; 
+		for(int j = 0; j < (*vec)[i].size(); j++)
+		{
+			cout << "Hits " << i << ", " << j << " : " << (*vec)[i][j].get_num_hits() << " / " << (*vec)[i][j].get_num_ops() << endl;
+		} 
 	}
 }
 
