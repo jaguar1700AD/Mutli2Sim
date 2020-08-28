@@ -200,14 +200,19 @@ void SimdUnit::Execute()
 		
 		// Find the recent operation number (add, sub, mul etc) which accessed an lut
 		int op = -1;
+		int count = 0; string str = "";
 		for(int i = 0; i < (*store)[start_lut].size(); i++)
 		{
 			if ((*store)[start_lut][i].get_recent_hits().size() == 4)
-			{	
+			{
+				str += "1";	
 				op = i;
-				break;
+				count += 1;
+				//break;
 			}
+			else str += "0";
 		} 
+		if (count > 1) cout << str << endl;
 		
 		if (op != -1)
 		{

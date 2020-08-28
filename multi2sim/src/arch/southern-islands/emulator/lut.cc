@@ -8,7 +8,7 @@ lut::lut(unsigned int size, float epsilon)
 	num_misses = 0;
 }
 
-set<lut::elem>::iterator lut::get_closest(elem V)
+list<lut::row>::iterator lut::get_closest(row V)
 {
 	if (table.size() == 0) return table.end();
 	
@@ -20,68 +20,38 @@ set<lut::elem>::iterator lut::get_closest(elem V)
 	return candidate;
 }
 
-set <lut::elem>::iterator lut::get_LRU()
-{
-	return table.begin();
-}
-
-void lut::change_elem_time(set<elem>::iterator it, unsigned int new_time)
-{
-	elem e = *it; e.last_used = new_time;
-        table.erase(it);
-        table.insert(e);
-}
-
-void lut::change_elem_time(set<elem>::iterator it, unsigned int new_time, set<elem>::iterator hint)
-{
-        elem e = *it; e.last_used = new_time;
-	if (hint == it) hint = next(it);
-        table.erase(it);
-        table.insert(hint, e);
-}
-
-
-void lut::make_old()
-{
-	for(auto it = table.begin(); it != table.end(); it++) 
-	{
-		elem e((*it).data.as_float[0], (*it).data.as_float[1], (*it).last_used + 1);
-		auto hint = next(it);
-       		table.erase(it);
-       		table.insert(hint, e); // Hint provided for fast O(1) insertion
-	}
-}
 
 bool lut::find(float a, float b, float &store1, float &store2)
 {
-	elem val(a, b, 0);
-	auto it = get_closest(val);
+	struct row new_row; new_row.data[0] = a; new_row.data[1] = b;
+	auto it = get_closest(new_row);
 	
-	if (it == table.end() || abs_diff(*it, val) > epsilon)
+	if (it == table.end() || abs_diff(*it, new_row) > epsilon)
 	{
 		// Miss
-		if (table.size() == size) table.erase(get_LRU());
-		table.insert(table.end(), val);
+		if (table.size() == size) table.pop_front();
+		table.push_back(new_row);
 		num_misses += 1;
 		
-		make_old();
 		recent_hits.push_back(false);
 		return false; 
 	}
 	
 	// Hit	
 	num_hits += 1;
-	store1 = (*it).data.as_float[0]; store2 = (*it).data.as_float[1];
-	change_elem_time(it, 0, table.end());
-	make_old();	
+	store1 = (*it).data[0]; store2 = (*it).data[1];
+	
+	row hit_row = *it;
+	table.erase(it);
+	table.push_back(hit_row);
+	
 	recent_hits.push_back(true);
-
 	return true;
 }
 
 void lut::print()
 {	
-	cout << "\n...... LUT Values ......" << endl;
+	cout << "\n...... LUT Data ......" << endl;
 	for(auto it = table.begin(); it != table.end(); it++)
 	{
 		print_value(it);
