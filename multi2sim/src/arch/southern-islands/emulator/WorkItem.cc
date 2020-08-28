@@ -230,7 +230,7 @@ float WorkItem::Float16to32(unsigned short value)
 }
 
 // My Code
-vector <vector <lut>>* WorkItem::table = new vector <vector <lut>> (32 * 4 * 16, vector <lut> (3, lut(128, 10)));
+vector <vector <lut>>* WorkItem::table;
 
 WorkItem::WorkItem(Wavefront *wavefront, int id)
 {

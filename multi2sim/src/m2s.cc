@@ -502,15 +502,6 @@ void MainLoop()
 	// Restore default signal handlers
 	esim->DisableSignals();
 
-	// My Code
-	vector <vector<lut>>* vec = SI::WorkItem::table;
-	for(int i = 0; i < (*vec).size(); i++)
-	{
-		for(int j = 0; j < (*vec)[i].size(); j++)
-		{
-			cout << "Hits " << i << ", " << j << " : " << (*vec)[i][j].get_num_hits() << " / " << (*vec)[i][j].get_num_ops() << endl;
-		} 
-	}
 }
 
 
@@ -730,8 +721,35 @@ int main(int argc, char **argv)
 	// Main exception handler
 	try
 	{
+		// My Code
+		// ................................................................................................................................................
+		
+		ifstream fin; 
+		fin.open("/tmp/multi2sim/src/lut_config_private"); 
+		float eps; int size;
+		fin >> size; fin >> eps;
+		fin.close();
+		
+		cout << "Size = " << size << " Epsilon = " << eps << endl;
+		SI::WorkItem::table = new vector <vector <lut>> (32 * 4 * 16, vector <lut> (3, lut(size, eps)));
+			
 		// Run main program
-		return MainProgram(argc, argv);
+		int v = MainProgram(argc, argv);
+			
+		/*
+		vector <vector<lut>>* vec = SI::WorkItem::table;
+        	for(int i = 0; i < (*vec).size(); i++)
+        	{
+                	for(int j = 0; j < (*vec)[i].size(); j++)
+                	{
+                        	cout << "Hits " << i << ", " << j << " : " << (*vec)[i][j].get_num_hits() << " / " << (*vec)[i][j].get_num_ops() << endl;
+                	}	 
+        	}*/
+		
+		return v;
+
+		// .................................................................................................................................................
+
 	}
 	catch (misc::Exception &e)
 	{
