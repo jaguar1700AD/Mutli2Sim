@@ -198,45 +198,26 @@ void SimdUnit::Execute()
 		vector <vector <lut>>* store = WorkItem::table;
 		int min_sub = 100;
 		
-		// Find the recent operation number (add, sub, mul etc) which accessed an lut
-		int op = -1;
-		int count = 0; string str = "";
-		for(int i = 0; i < (*store)[start_lut].size(); i++)
+		for(int i = start_lut; i < start_lut + 16; i++)
 		{
-			if ((*store)[start_lut][i].get_recent_hits().size() == 4)
-			{
-				str += "1";	
-				op = i;
-				count += 1;
-				//break;
-			}
-			else str += "0";
-		} 
-		if (count > 1) cout << str << endl;
-		
-		if (op != -1)
-		{
-			for(int i = start_lut; i < start_lut + 16; i++)
-			{
-				vector <bool> hits = (*store)[i][op].get_recent_hits();
+			vector <bool> hits {uop->hits[i], uop->hits[i+16], uop->hits[i+32], uop->hits[i+48]};
 
-				int sub = 0;
-				if (hits[0] == true || hits[1] == true) sub += 1;
-				if (hits[2] == true)
-				{
-					if (hits[3] == true) sub += 2;
-					else sub += 1;
-				}
-				else
-				{
-					if (hits[3] == true) sub += 1;
-				}
-	
-				if (sub < min_sub) min_sub = sub;
+			int sub = 0;
+			if (hits[0] == true || hits[1] == true) sub += 1;
+			if (hits[2] == true)
+			{
+				if (hits[3] == true) sub += 2;
+				else sub += 1;
 			}
-			//cout << "Min Sub: " << min_sub << endl;
-			uop->execute_ready -= min_sub;
+			else
+			{
+				if (hits[3] == true) sub += 1;
+			}
+	
+			if (sub < min_sub) min_sub = sub;
 		}
+		//cout << "Min Sub: " << min_sub << endl;
+		uop->execute_ready -= min_sub;
 
 		// .................................................................		
 		

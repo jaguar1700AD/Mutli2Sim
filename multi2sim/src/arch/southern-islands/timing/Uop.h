@@ -85,6 +85,8 @@ class Uop
 	int wavefront_pool_id;
 
 public:
+	// My Code
+	vector <bool> hits; // Denotes whether the instruction corresponding to this uop in wavefront emulation resulted in a hit
 
 	/// Constructor
 	Uop(Wavefront *wavefront, WavefrontPoolEntry *wavefront_pool_entry,

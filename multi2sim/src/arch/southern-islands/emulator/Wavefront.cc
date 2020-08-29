@@ -108,6 +108,9 @@ void Wavefront::setSregUint(int sreg, unsigned int value)
 
 Wavefront::Wavefront(WorkGroup *work_group, int id)
 {
+	// My Code
+	for(int i = 0; i < WorkGroup::WavefrontSize; i++) recent_hits.push_back(false);	
+
 	this->work_group = work_group;
 	this->id = id;
 

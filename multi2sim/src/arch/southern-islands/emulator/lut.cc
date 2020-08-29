@@ -33,7 +33,6 @@ bool lut::find(float a, float b, float &store1, float &store2)
 		table.push_back(new_row);
 		num_misses += 1;
 		
-		recent_hits.push_back(false);
 		return false; 
 	}
 	
@@ -45,7 +44,6 @@ bool lut::find(float a, float b, float &store1, float &store2)
 	table.erase(it);
 	table.push_back(hit_row);
 	
-	recent_hits.push_back(true);
 	return true;
 }
 

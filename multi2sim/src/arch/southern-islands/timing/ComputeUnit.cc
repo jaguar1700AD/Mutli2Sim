@@ -329,6 +329,8 @@ void ComputeUnit::Fetch(FetchBuffer *fetch_buffer,
 		uop->setInstruction(wavefront->getInstruction());
 		uop->vector_memory_global_coherency =
 				wavefront->vector_memory_global_coherency;
+		// My Code
+		uop->hits = wavefront->recent_hits;
 
 		// Checks
 		assert(wavefront->getWorkGroup() && uop->getWorkGroup());

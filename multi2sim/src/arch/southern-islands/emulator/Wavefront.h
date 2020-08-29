@@ -26,6 +26,7 @@
 #include <arch/southern-islands/disassembler/Instruction.h>
 #include <arch/southern-islands/emulator/WorkItem.h>
 
+
 namespace SI
 {
 
@@ -47,7 +48,7 @@ public:
 /// wavefront is composed of 64 work-items that fetch one instruction and
 /// execute it multiple times.
 class Wavefront
-{
+{ 
 	// Global wavefront identifier
 	int id;
 
@@ -127,6 +128,9 @@ class Wavefront
 	long long export_instruction_count = 0;
 
 public:
+	// My Code
+        vector <bool> recent_hits; // Stores whether the most recent instruction for this wavefront resulted in a hit or miss
+
 
 	/// Constructor
 	///
