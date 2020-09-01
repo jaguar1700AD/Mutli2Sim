@@ -19,6 +19,8 @@
 
 #include <arch/southern-islands/emulator/WorkGroup.h>
 #include <arch/southern-islands/emulator/Wavefront.h>
+// My Code
+#include <arch/southern-islands/disassembler/Instruction.h>
 
 #include "SimdUnit.h"
 #include "ComputeUnit.h"
@@ -206,7 +208,12 @@ void SimdUnit::Execute()
 			if (hits[0] == true || hits[1] == true) sub += 1;
 			if (hits[2] == true)
 			{
-				if (hits[3] == true) sub += 2;
+				if (hits[3] == true) 
+				{
+					Instruction::Opcode opcode = uop->getInstruction()->getOpcode();
+					if (opcode == Instruction::Opcode_V_MAC_F32) sub += 1; 
+					else sub += 2;
+				}
 				else sub += 1;
 			}
 			else

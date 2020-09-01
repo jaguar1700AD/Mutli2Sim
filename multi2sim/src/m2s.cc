@@ -731,7 +731,7 @@ int main(int argc, char **argv)
 		fin.close();
 		
 		cout << "Size = " << size << " Epsilon = " << eps << endl;
-		SI::WorkItem::table = new vector <vector <lut>> (32 * 4 * 16, vector <lut> (3, lut(size, eps)));
+		SI::WorkItem::table = new vector <vector <lut>> (32 * 4 * 16, vector <lut> (4, lut(size, eps)));
 			
 		// Run main program
 		int v = MainProgram(argc, argv);

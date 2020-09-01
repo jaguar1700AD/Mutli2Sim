@@ -3532,6 +3532,31 @@ void WorkItem::ISA_V_MAC_F32_Impl(Instruction *instruction)
 
 	// Calculate the result.
 	result.as_float = s0.as_float * s1.as_float + dst.as_float;
+	
+	// My Code
+	// ..................................................................................
+        int lane_num = id_in_wavefront % 16;
+        WavefrontPool* wp = getWavefront()->getWavefrontPoolEntry()->getWavefrontPool();
+        int simd_num = wp->getId();
+        int cu_num = wp->getComputeUnit()->getIndex();
+        int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
+
+        float f1, f2, prod;
+        if ((*table)[lut_num][3].find(s0.as_float, s1.as_float, f1, f2)) 
+        {
+                prod = f1 * f2;
+                getWavefront()->recent_hits[id_in_wavefront] = true;
+        }
+        else 
+        {
+                prod = s0.as_float * s1.as_float;
+                getWavefront()->recent_hits[id_in_wavefront] = false;
+        }
+        // ................................................................................
+	
+	// Calculate the result.
+        result.as_float = prod + dst.as_float;
+
 
 	// Write the results.
 	WriteVReg(INST.vdst, result.as_uint);
