@@ -45,6 +45,10 @@ public:
 	//
 	// Static fields
 	//
+	// My Code
+	static vector<int> last_cycle;
+	static vector <long long int> total_gap;
+	static vector <long long int> total_times;
 
 	/// Maximum number of instructions processed per cycle
 	static int width;

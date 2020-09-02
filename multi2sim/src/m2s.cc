@@ -746,6 +746,15 @@ int main(int argc, char **argv)
                 	}	 
         	}*/
 		
+		int num = SI::SimdUnit::total_gap.size();
+		long long int tot_times = 0;
+		for(int i = 0; i < num; i++)
+		{
+			tot_times += SI::SimdUnit::total_times[i];
+			cout << "Avg Call Gap: " << SI::SimdUnit::total_gap[i] / (double)SI::SimdUnit::total_times[i] << " Total times called: " << SI::SimdUnit::total_times[i] << endl;
+		}
+		cout << "Overall total times: " << tot_times << endl;		
+
 		return v;
 
 		// .................................................................................................................................................

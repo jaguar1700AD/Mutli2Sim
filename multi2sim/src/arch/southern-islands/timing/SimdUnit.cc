@@ -39,6 +39,10 @@ int SimdUnit::read_exec_write_latency = 8;
 int SimdUnit::exec_buffer_size = 2;
 int SimdUnit::read_exec_write_buffer_size = 2;
 
+// My Code
+vector <int> SimdUnit::last_cycle (32 * 4, 0);
+vector <long long int> SimdUnit::total_gap (32 * 4, 0);
+vector <long long int> SimdUnit::total_times (32 * 4, 0);
 
 void SimdUnit::Run()
 {
@@ -65,6 +69,7 @@ bool SimdUnit::isValidUop(Uop *uop) const
 
 void SimdUnit::Issue(std::unique_ptr<Uop> uop)
 {
+	
 	// One more instruction of this kind
 	ComputeUnit *compute_unit = getComputeUnit();
 	compute_unit->num_simd_instructions++;
@@ -190,15 +195,16 @@ void SimdUnit::Execute()
 		// subwavefronts
 		uop->execute_ready = compute_unit->getTiming()->getCycle() +
 				read_exec_write_latency;
+		
 
 		// My Code
-		// ................................................................
+		// ..............................................................
 
 		int simd_num = getId(); int cu_num = getComputeUnit()->getIndex();
 		int start_lut = (cu_num * 4 * 16) + (simd_num * 16);
 		
 		vector <vector <lut>>* store = WorkItem::table;
-		int min_sub = 100;
+		int max_sub = 0;
 		
 		for(int i = start_lut; i < start_lut + 16; i++)
 		{
@@ -221,14 +227,23 @@ void SimdUnit::Execute()
 				if (hits[3] == true) sub += 1;
 			}
 	
-			if (sub < min_sub) min_sub = sub;
+			if (sub > max_sub) max_sub = sub;
 		}
 		//cout << "Min Sub: " << min_sub << endl;
-		uop->execute_ready -= min_sub;
+		uop->execute_ready -= max_sub;
 
-		// .................................................................		
-		
-		
+		// My Code 
+        	{
+			int num = cu_num * 4 + simd_num;
+                	int new_gap = Timing::getInstance()->getCycle() - last_cycle[num];
+                	total_gap[num] += new_gap;
+                	total_times[num] += 1;
+                	last_cycle[num] = Timing::getInstance()->getCycle();
+        	} 
+
+
+		// .................................................................				
+
 		// Update wavefront pool entry
 		uop->getWavefrontPoolEntry()->ready_next_cycle = true;
 
