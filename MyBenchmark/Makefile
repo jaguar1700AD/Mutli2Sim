@@ -4,8 +4,8 @@
 
 # Compiler settings - Can be customized.
 CC = g++
-CXXFLAGS = -std=c++11 -I /usr/include/opencv4 -g
-LDFLAGS = -lOpenCL 
+CXXFLAGS = -m32 -std=c++11  
+LDFLAGS = -L $M2S_ROOT/lib/.libs -l m2s-opencl
 
 # Makefile settings - Can be customized.
 APPNAME = EXE

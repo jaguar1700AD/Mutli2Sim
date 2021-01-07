@@ -4,9 +4,9 @@
 #define INCLUDE_H
 
 #define CL_HPP_ENABLE_EXCEPTIONS
-#define CL_HPP_TARGET_OPENCL_VERSION 200
-#define CL_TARGET_OPENCL_VERSION 120
-
+#define CL_HPP_TARGET_OPENCL_VERSION 110
+#define CL_TARGET_OPENCL_VERSION 110
+#define CL_VERSION_1_1
 
 #include "CL/cl.hpp"
 #include "OpenCL.h"

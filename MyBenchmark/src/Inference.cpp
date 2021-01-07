@@ -1,4 +1,5 @@
 #define __CL_ENABLE_EXCEPTIONS
+#define CL_VERSION_1_1
 
 #include "include/include.h"
 #include "include/OpenCL.h"
