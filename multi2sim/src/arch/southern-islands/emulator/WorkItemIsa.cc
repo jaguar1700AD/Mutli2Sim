@@ -2820,7 +2820,12 @@ void WorkItem::ISA_V_ADD_F32_Impl(Instruction *instruction)
 	int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
 	float f1, f2;
-	if ((*table)[lut_num][0].find(s0.as_float, s1.as_float, f1, f2)) 
+	if (s0.as_float == 0 || s1.as_float == 0)
+	{
+		sum.as_float = s0.as_float + s1.as_float;
+                getWavefront()->recent_hits[id_in_wavefront] = true;
+	}
+	else if ((*table)[lut_num][0].find(s0.as_float, s1.as_float, f1, f2)) 
 	{
 		sum.as_float = f1 + f2;
 		getWavefront()->recent_hits[id_in_wavefront] = true;
@@ -2868,7 +2873,12 @@ void WorkItem::ISA_V_SUB_F32_Impl(Instruction *instruction)
         int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
 	float f1, f2;
-        if ((*table)[lut_num][1].find(s0.as_float, s1.as_float, f1, f2)) 
+	if (s0.as_float == 0 || s1.as_float == 0)
+        {
+                dif.as_float = s0.as_float - s1.as_float;
+                getWavefront()->recent_hits[id_in_wavefront] = true;
+        }
+        else if ((*table)[lut_num][1].find(s0.as_float, s1.as_float, f1, f2)) 
         {
                 dif.as_float = f1 - f2;
                 getWavefront()->recent_hits[id_in_wavefront] = true;
@@ -2993,7 +3003,13 @@ void WorkItem::ISA_V_MUL_F32_Impl(Instruction *instruction)
         int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
 	float f1, f2;
-        if ((*table)[lut_num][2].find(s0.as_float, s1.as_float, f1, f2)) 
+	if (s0.as_float == 0 || s1.as_float == 0)
+        {
+                product.as_float = s0.as_float * s1.as_float;
+                getWavefront()->recent_hits[id_in_wavefront] = true;
+        }
+
+        else if ((*table)[lut_num][2].find(s0.as_float, s1.as_float, f1, f2)) 
         {
                 product.as_float = f1 * f2;
                 getWavefront()->recent_hits[id_in_wavefront] = true;
@@ -3542,7 +3558,12 @@ void WorkItem::ISA_V_MAC_F32_Impl(Instruction *instruction)
         int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
         float f1, f2, prod;
-        if ((*table)[lut_num][3].find(s0.as_float, s1.as_float, f1, f2)) 
+	if (s0.as_float == 0 || s1.as_float == 0)
+        {
+                prod = s0.as_float * s1.as_float;
+                getWavefront()->recent_hits[id_in_wavefront] = true;
+        }
+        else if ((*table)[lut_num][3].find(s0.as_float, s1.as_float, f1, f2)) 
         {
                 prod = f1 * f2;
                 getWavefront()->recent_hits[id_in_wavefront] = true;
@@ -4392,7 +4413,12 @@ void WorkItem::ISA_V_ADD_F32_VOP3a_Impl(Instruction *instruction)
         int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
 	float f1, f2;
-        if ((*table)[lut_num][0].find(s0.as_float, s1.as_float, f1, f2)) 
+        if (s0.as_float == 0 || s1.as_float == 0)
+        {
+                sum.as_float = s0.as_float + s1.as_float;
+                getWavefront()->recent_hits[id_in_wavefront] = true;
+        }
+	else if ((*table)[lut_num][0].find(s0.as_float, s1.as_float, f1, f2)) 
         {
                 sum.as_float = f1 + f2;
                 getWavefront()->recent_hits[id_in_wavefront] = true;
@@ -4534,7 +4560,12 @@ void WorkItem::ISA_V_MUL_F32_VOP3a_Impl(Instruction *instruction)
         int lut_num = (cu_num * 16 * 4) + (simd_num * 16) + lane_num;
 
 	float f1, f2;
-        if ((*table)[lut_num][2].find(s0.as_float, s1.as_float, f1, f2)) 
+	if (s0.as_float == 0 || s1.as_float == 0)
+        {
+                result.as_float = s0.as_float * s1.as_float;
+                getWavefront()->recent_hits[id_in_wavefront] = true;
+        }
+        else if ((*table)[lut_num][2].find(s0.as_float, s1.as_float, f1, f2)) 
         {
                 result.as_float = f1 * f2;
                 getWavefront()->recent_hits[id_in_wavefront] = true;
