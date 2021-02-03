@@ -223,7 +223,7 @@ public:
 	void Run(int &num_emu_active, int &num_timing_active);
 
 	/// Dump a summary for all architectures in the pool.
-	void DumpSummary(std::ostream &os = std::cerr) const;
+	void DumpSummary(std::ostream &os = std::cout) const;
 
 	/// Dump a report for all architectures in the pool.
 	void DumpReports();

@@ -1,0 +1,2030 @@
+Size = 16 Epsilon = 0
+Platform 0 : Multi2Sim
+
+Original Input Real
+249.023 10.438 30.967 21.9481 255.176 44.7779 187.344 2.89754 244.53 79.2409 
+
+
+Original Input Img
+0.972745 0.0407735 0.120965 0.0857347 0.99678 0.174914 0.731811 0.0113185 0.955194 0.309535 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+130292 325.257 -1810.34 -637.994 -730.374 520.985 617.811 -1085.7 1997.5 1822.14 
+
+
+Output img
+508.954 -822.526 -1580.44 -742.728 305.788 3393.51 -592.18 -603.49 -1520.06 -351.442 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9689
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 97678
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 734062
+InstructionsPerSecond = 2946585
+
+Hits Percent: 0.482724% 
+Size = 32 Epsilon = 0
+Platform 0 : Multi2Sim
+
+Original Input Real
+249.023 10.438 30.967 21.9481 255.176 44.7779 187.344 2.89754 244.53 79.2409 
+
+
+Original Input Img
+0.972745 0.0407735 0.120965 0.0857347 0.99678 0.174914 0.731811 0.0113185 0.955194 0.309535 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+130292 325.257 -1810.34 -637.994 -730.374 520.985 617.811 -1085.7 1997.5 1822.14 
+
+
+Output img
+508.954 -822.526 -1580.44 -742.728 305.788 3393.51 -592.18 -603.49 -1520.06 -351.442 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9631
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 97090
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 734062
+InstructionsPerSecond = 2933936
+
+Hits Percent: 0.50813% 
+Size = 64 Epsilon = 0
+Platform 0 : Multi2Sim
+
+Original Input Real
+249.023 10.438 30.967 21.9481 255.176 44.7779 187.344 2.89754 244.53 79.2409 
+
+
+Original Input Img
+0.972745 0.0407735 0.120965 0.0857347 0.99678 0.174914 0.731811 0.0113185 0.955194 0.309535 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+130292 325.257 -1810.34 -637.994 -730.374 520.985 617.811 -1085.7 1997.5 1822.14 
+
+
+Output img
+508.954 -822.526 -1580.44 -742.728 305.788 3393.51 -592.18 -603.49 -1520.06 -351.442 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9481
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 95576
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 734062
+InstructionsPerSecond = 2915721
+
+Hits Percent: 0.542005% 
+Size = 128 Epsilon = 0
+Platform 0 : Multi2Sim
+
+Original Input Real
+212.358 115.471 107.69 231.404 109.464 228.384 23.1697 205.477 193.609 228.192 
+
+
+Original Input Img
+0.829525 0.451059 0.420664 0.903921 0.427592 0.892126 0.0905066 0.802643 0.756287 0.891376 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134545 1395.32 343.521 1272.41 473.939 180.603 -1674.97 1827.46 -680.219 2086.26 
+
+
+Output img
+525.568 -1453.77 2434.95 -130.956 -1235.41 1059.36 -944.689 1993.58 -2431.04 1762.89 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.29 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.15 [s]
+Instructions = 1316
+InstructionsPerSecond = 8965
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 90378
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 734611
+InstructionsPerSecond = 2819484
+
+Hits Percent: 1.42276% 
+Size = 256 Epsilon = 0
+Platform 0 : Multi2Sim
+
+Original Input Real
+212.358 115.471 107.69 231.404 109.464 228.384 23.1697 205.477 193.609 228.192 
+
+
+Original Input Img
+0.829525 0.451059 0.420664 0.903921 0.427592 0.892126 0.0905066 0.802643 0.756287 0.891376 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134545 1395.32 343.521 1272.41 473.939 180.603 -1674.97 1827.46 -680.219 2086.26 
+
+
+Output img
+525.568 -1453.77 2434.95 -130.956 -1235.41 1059.36 -944.689 1993.58 -2431.04 1762.89 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.30 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.16 [s]
+Instructions = 1316
+InstructionsPerSecond = 8398
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 84658
+
+[ x86 ]
+RealTime = 0.27 [s]
+Instructions = 734591
+InstructionsPerSecond = 2731431
+
+Hits Percent: 1.67683% 
+Size = 512 Epsilon = 0
+Platform 0 : Multi2Sim
+
+Original Input Real
+212.358 115.471 107.69 231.404 109.464 228.384 23.1697 205.477 193.609 228.192 
+
+
+Original Input Img
+0.829525 0.451059 0.420664 0.903921 0.427592 0.892126 0.0905066 0.802643 0.756287 0.891376 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134545 1395.32 343.521 1272.41 473.939 180.603 -1674.97 1827.46 -680.219 2086.26 
+
+
+Output img
+525.568 -1453.77 2434.95 -130.956 -1235.41 1059.36 -944.689 1993.58 -2431.04 1762.89 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.32 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.17 [s]
+Instructions = 1316
+InstructionsPerSecond = 7707
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 77695
+
+[ x86 ]
+RealTime = 0.28 [s]
+Instructions = 734611
+InstructionsPerSecond = 2590773
+
+Hits Percent: 1.67683% 
+Size = 1024 Epsilon = 0
+Platform 0 : Multi2Sim
+
+Original Input Real
+47.4322 221.015 184.293 56.4979 92.3297 155.933 242.516 24.6965 142.721 120.528 
+
+
+Original Input Img
+0.185282 0.863339 0.719895 0.220695 0.360663 0.609115 0.947329 0.0964709 0.557505 0.470814 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134441 -432.753 -613.169 1015.83 -3847.38 -167.909 -1926.65 -180.9 512.457 3498.81 
+
+
+Output img
+525.161 -449.489 -1047.91 -2236.73 -464.966 -2838.12 -3978.08 -2621.4 -665.988 -1187.86 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.32 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.17 [s]
+Instructions = 1316
+InstructionsPerSecond = 7583
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 76443
+
+[ x86 ]
+RealTime = 0.29 [s]
+Instructions = 734355
+InstructionsPerSecond = 2559308
+
+Hits Percent: 1.67683% 
+Size = 16 Epsilon = 1e-06
+Platform 0 : Multi2Sim
+
+Original Input Real
+47.4322 221.015 184.293 56.4979 92.3297 155.933 242.516 24.6965 142.721 120.528 
+
+
+Original Input Img
+0.185282 0.863339 0.719895 0.220695 0.360663 0.609115 0.947329 0.0964709 0.557505 0.470814 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134441 -432.753 -613.169 1015.83 -3847.38 -167.909 -1926.65 -180.9 512.457 3498.81 
+
+
+Output img
+525.161 -449.489 -1047.91 -2236.73 -464.966 -2838.12 -3978.08 -2621.4 -665.988 -1187.86 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.29 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9493
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 95699
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 734425
+InstructionsPerSecond = 2876139
+
+Hits Percent: 0.482724% 
+Size = 32 Epsilon = 1e-06
+Platform 0 : Multi2Sim
+
+Original Input Real
+47.4322 221.015 184.293 56.4979 92.3297 155.933 242.516 24.6965 142.721 120.528 
+
+
+Original Input Img
+0.185282 0.863339 0.719895 0.220695 0.360663 0.609115 0.947329 0.0964709 0.557505 0.470814 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134441 -432.753 -613.169 1015.83 -3847.38 -167.909 -1926.65 -180.9 512.457 3498.81 
+
+
+Output img
+525.161 -449.489 -1047.91 -2236.73 -464.966 -2838.12 -3978.08 -2621.4 -665.988 -1187.86 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9547
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 96245
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 734425
+InstructionsPerSecond = 2920876
+
+Hits Percent: 0.50813% 
+Size = 64 Epsilon = 1e-06
+Platform 0 : Multi2Sim
+
+Original Input Real
+47.4322 221.015 184.293 56.4979 92.3297 155.933 242.516 24.6965 142.721 120.528 
+
+
+Original Input Img
+0.185282 0.863339 0.719895 0.220695 0.360663 0.609115 0.947329 0.0964709 0.557505 0.470814 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134441 -432.753 -613.169 1015.83 -3847.38 -167.909 -1926.65 -180.9 512.457 3498.81 
+
+
+Output img
+525.161 -449.489 -1047.91 -2236.73 -464.966 -2838.12 -3978.08 -2621.4 -665.988 -1187.86 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9507
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 95843
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 734425
+InstructionsPerSecond = 2924912
+
+Hits Percent: 0.542005% 
+Size = 128 Epsilon = 1e-06
+Platform 0 : Multi2Sim
+
+Original Input Real
+138.717 198.45 5.82611 137.934 75.0218 84.5344 206.376 99.6716 221.007 13.5955 
+
+
+Original Input Img
+0.541865 0.775196 0.0227582 0.538805 0.293054 0.330212 0.806155 0.389342 0.86331 0.0531073 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+130240 3789.58 3627.68 1060.91 -260.175 -671.706 1238.56 -960.821 460.803 1342.57 
+
+
+Output img
+508.749 -1365.95 1880.79 -881.354 3124.59 353.032 -1145.66 2080.88 -2008.41 -2842.29 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.29 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.15 [s]
+Instructions = 1316
+InstructionsPerSecond = 9036
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 91093
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 733861
+InstructionsPerSecond = 2822857
+
+Hits Percent: 1.42276% 
+Size = 256 Epsilon = 1e-06
+Platform 0 : Multi2Sim
+
+Original Input Real
+138.717 198.45 5.82611 137.934 75.0218 84.5344 206.376 99.6716 221.007 13.5955 
+
+
+Original Input Img
+0.541865 0.775196 0.0227582 0.538805 0.293054 0.330212 0.806155 0.389342 0.86331 0.0531073 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+130240 3789.58 3627.68 1060.91 -260.175 -671.706 1238.56 -960.821 460.803 1342.57 
+
+
+Output img
+508.749 -1365.95 1880.79 -881.354 3124.59 353.032 -1145.66 2080.88 -2008.41 -2842.29 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.31 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.16 [s]
+Instructions = 1316
+InstructionsPerSecond = 8308
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 83750
+
+[ x86 ]
+RealTime = 0.27 [s]
+Instructions = 733838
+InstructionsPerSecond = 2677645
+
+Hits Percent: 1.67683% 
+Size = 512 Epsilon = 1e-06
+Platform 0 : Multi2Sim
+
+Original Input Real
+138.717 198.45 5.82611 137.934 75.0218 84.5344 206.376 99.6716 221.007 13.5955 
+
+
+Original Input Img
+0.541865 0.775196 0.0227582 0.538805 0.293054 0.330212 0.806155 0.389342 0.86331 0.0531073 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+130240 3789.58 3627.68 1060.91 -260.175 -671.706 1238.56 -960.821 460.803 1342.57 
+
+
+Output img
+508.749 -1365.95 1880.79 -881.354 3124.59 353.032 -1145.66 2080.88 -2008.41 -2842.29 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.32 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.17 [s]
+Instructions = 1316
+InstructionsPerSecond = 7718
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 77803
+
+[ x86 ]
+RealTime = 0.28 [s]
+Instructions = 733858
+InstructionsPerSecond = 2600996
+
+Hits Percent: 1.67683% 
+Size = 1024 Epsilon = 1e-06
+Platform 0 : Multi2Sim
+
+Original Input Real
+104.02 48.9171 212.474 221.764 59.0547 14.3721 173.058 48.3811 44.6744 37.9714 
+
+
+Original Input Img
+0.406327 0.191082 0.829977 0.866267 0.230682 0.0561408 0.676009 0.188989 0.174509 0.148326 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+129030 -122.11 563.043 207.225 -2474.79 2077.64 242.334 -1956.34 593.883 779.484 
+
+
+Output img
+504.024 99.008 1922.62 1618.41 -190.656 2191.27 -2850.23 1633.9 -931.362 -131.917 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.33 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.18 [s]
+Instructions = 1316
+InstructionsPerSecond = 7421
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 74811
+
+[ x86 ]
+RealTime = 0.29 [s]
+Instructions = 733966
+InstructionsPerSecond = 2490164
+
+Hits Percent: 1.67683% 
+Size = 16 Epsilon = 0.0001
+Platform 0 : Multi2Sim
+
+Original Input Real
+104.02 48.9171 212.474 221.764 59.0547 14.3721 173.058 48.3811 44.6744 37.9714 
+
+
+Original Input Img
+0.406327 0.191082 0.829977 0.866267 0.230682 0.0561408 0.676009 0.188989 0.174509 0.148326 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+129030 -122.11 563.043 207.225 -2474.79 2077.64 242.334 -1956.34 593.883 779.484 
+
+
+Output img
+504.024 99.008 1922.62 1618.41 -190.656 2191.27 -2850.23 1633.9 -931.362 -131.917 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9732
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 98109
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 733963
+InstructionsPerSecond = 2939992
+
+Hits Percent: 0.482724% 
+Size = 32 Epsilon = 0.0001
+Platform 0 : Multi2Sim
+
+Original Input Real
+104.02 48.9171 212.474 221.764 59.0547 14.3721 173.058 48.3811 44.6744 37.9714 
+
+
+Original Input Img
+0.406327 0.191082 0.829977 0.866267 0.230682 0.0561408 0.676009 0.188989 0.174509 0.148326 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+129030 -122.11 563.043 207.225 -2474.79 2077.64 242.334 -1956.34 593.883 779.484 
+
+
+Output img
+504.024 99.008 1922.62 1618.41 -190.656 2191.27 -2850.23 1633.9 -931.362 -131.917 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.30 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.15 [s]
+Instructions = 1316
+InstructionsPerSecond = 8909
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 89812
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 733963
+InstructionsPerSecond = 2771962
+
+Hits Percent: 0.50813% 
+Size = 64 Epsilon = 0.0001
+Platform 0 : Multi2Sim
+
+Original Input Real
+67.357 154.77 34.1664 47.2418 42.2303 71.2003 136.948 123.91 123.275 59.0576 
+
+
+Original Input Img
+0.263113 0.60457 0.133462 0.184538 0.164962 0.278126 0.534952 0.484024 0.481544 0.230694 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+129477 2514.55 32.8765 1130.3 -130.11 1479.57 -226.718 1195.5 -2812.49 -1581.5 
+
+
+Output img
+505.769 -26.4976 -1691.5 1023.19 1875.96 3129.2 -596.51 2079.53 510.69 795.375 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.29 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9446
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 95230
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 734128
+InstructionsPerSecond = 2841536
+
+Hits Percent: 0.542005% 
+Size = 128 Epsilon = 0.0001
+Platform 0 : Multi2Sim
+
+Original Input Real
+67.357 154.77 34.1664 47.2418 42.2303 71.2003 136.948 123.91 123.275 59.0576 
+
+
+Original Input Img
+0.263113 0.60457 0.133462 0.184538 0.164962 0.278126 0.534952 0.484024 0.481544 0.230694 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+129477 2514.55 32.8765 1130.3 -130.11 1479.57 -226.718 1195.5 -2812.49 -1581.5 
+
+
+Output img
+505.769 -26.4976 -1691.5 1023.19 1875.96 3129.2 -596.51 2079.53 510.69 795.375 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.30 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.15 [s]
+Instructions = 1316
+InstructionsPerSecond = 8998
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 90715
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 734128
+InstructionsPerSecond = 2815513
+
+Hits Percent: 1.42276% 
+Size = 256 Epsilon = 0.0001
+Platform 0 : Multi2Sim
+
+Original Input Real
+67.357 154.77 34.1664 47.2418 42.2303 71.2003 136.948 123.91 123.275 59.0576 
+
+
+Original Input Img
+0.263113 0.60457 0.133462 0.184538 0.164962 0.278126 0.534952 0.484024 0.481544 0.230694 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+129477 2514.55 32.8765 1130.3 -130.11 1479.57 -226.718 1195.5 -2812.49 -1581.5 
+
+
+Output img
+505.769 -26.4976 -1691.5 1023.19 1875.96 3129.2 -596.51 2079.53 510.69 795.375 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.30 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.16 [s]
+Instructions = 1316
+InstructionsPerSecond = 8326
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 83933
+
+[ x86 ]
+RealTime = 0.27 [s]
+Instructions = 734108
+InstructionsPerSecond = 2687554
+
+Hits Percent: 1.67683% 
+Size = 512 Epsilon = 0.0001
+Platform 0 : Multi2Sim
+
+Original Input Real
+30.7561 132.351 110.985 0.735159 25.1587 254.977 100.779 71.229 72.6252 207.977 
+
+
+Original Input Img
+0.120141 0.516997 0.433537 0.00287172 0.098276 0.996005 0.393669 0.278238 0.283692 0.812412 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+131357 1296.8 -726.267 69.014 793.204 -2894.14 -25.5045 -3025.49 289.806 -53.5826 
+
+
+Output img
+513.113 2475.83 -1206.71 1005.36 1023.97 -1863.39 1089.73 -118.125 1513.87 -2338.33 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.31 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.17 [s]
+Instructions = 1316
+InstructionsPerSecond = 7743
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 78060
+
+[ x86 ]
+RealTime = 0.28 [s]
+Instructions = 734531
+InstructionsPerSecond = 2594938
+
+Hits Percent: 1.67683% 
+Size = 1024 Epsilon = 0.0001
+Platform 0 : Multi2Sim
+
+Original Input Real
+30.7561 132.351 110.985 0.735159 25.1587 254.977 100.779 71.229 72.6252 207.977 
+
+
+Original Input Img
+0.120141 0.516997 0.433537 0.00287172 0.098276 0.996005 0.393669 0.278238 0.283692 0.812412 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+131357 1296.8 -726.267 69.014 793.204 -2894.14 -25.5045 -3025.49 289.806 -53.5826 
+
+
+Output img
+513.113 2475.83 -1206.71 1005.36 1023.97 -1863.39 1089.73 -118.125 1513.87 -2338.33 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.32 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.17 [s]
+Instructions = 1316
+InstructionsPerSecond = 7608
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 76702
+
+[ x86 ]
+RealTime = 0.29 [s]
+Instructions = 734482
+InstructionsPerSecond = 2557816
+
+Hits Percent: 1.67683% 
+Size = 16 Epsilon = 0.01
+Platform 0 : Multi2Sim
+
+Original Input Real
+30.7561 132.351 110.985 0.735159 25.1587 254.977 100.779 71.229 72.6252 207.977 
+
+
+Original Input Img
+0.120141 0.516997 0.433537 0.00287172 0.098276 0.996005 0.393669 0.278238 0.283692 0.812412 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+131357 1296.8 -726.262 69.014 793.209 -2894.14 -25.5044 -3025.49 289.801 -53.5826 
+
+
+Output img
+513.119 2475.83 -1206.7 1005.36 1023.96 -1863.39 1089.73 -118.125 1513.87 -2338.33 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9662
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 97406
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 734510
+InstructionsPerSecond = 2929392
+
+Hits Percent: 0.486958% 
+Size = 32 Epsilon = 0.01
+Platform 0 : Multi2Sim
+
+Original Input Real
+249.918 109.282 59.6384 81.9887 135.314 182.506 64.371 145.636 21.6178 228.659 
+
+
+Original Input Img
+0.976244 0.426885 0.232963 0.320268 0.52857 0.712915 0.251449 0.568892 0.0844445 0.893199 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+127884 3846.05 -2061.21 753.626 2973.15 -770.75 -1108.77 639.823 472.869 2257.09 
+
+
+Output img
+499.55 4185.73 -1037.16 706.482 -1742.85 1.96008 -842.096 261.399 331.943 -417.517 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9629
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 97072
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 733505
+InstructionsPerSecond = 2937227
+
+Hits Percent: 0.529302% 
+Size = 64 Epsilon = 0.01
+Platform 0 : Multi2Sim
+
+Original Input Real
+249.918 109.282 59.6384 81.9887 135.314 182.506 64.371 145.636 21.6178 228.659 
+
+
+Original Input Img
+0.976244 0.426885 0.232963 0.320268 0.52857 0.712915 0.251449 0.568892 0.0844445 0.893199 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+127884 3846.05 -2061.21 753.478 2973.15 -770.75 -1108.77 639.675 472.869 2257.09 
+
+
+Output img
+499.55 4185.73 -1037.16 706.482 -1742.85 1.96008 -842.096 261.417 331.943 -417.517 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.30 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9278
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 93534
+
+[ x86 ]
+RealTime = 0.27 [s]
+Instructions = 733404
+InstructionsPerSecond = 2763391
+
+Hits Percent: 0.571646% 
+Size = 128 Epsilon = 0.01
+Platform 0 : Multi2Sim
+
+Original Input Real
+249.918 109.282 59.6384 81.9887 135.314 182.506 64.371 145.636 21.6178 228.659 
+
+
+Original Input Img
+0.976244 0.426885 0.232963 0.320268 0.52857 0.712915 0.251449 0.568892 0.0844445 0.893199 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+127884 3846.05 -2061.21 753.478 2973.15 -770.75 -1108.77 639.675 472.869 2257.09 
+
+
+Output img
+499.55 4185.73 -1037.16 706.482 -1742.85 1.96008 -842.096 261.417 331.943 -417.517 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.29 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9082
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 91555
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 733428
+InstructionsPerSecond = 2840586
+
+Hits Percent: 1.45241% 
+Size = 256 Epsilon = 0.01
+Platform 0 : Multi2Sim
+
+Original Input Real
+249.918 109.282 59.6384 81.9887 135.314 182.506 64.371 145.636 21.6178 228.659 
+
+
+Original Input Img
+0.836925 0.841314 0.538161 0.143208 0.964241 0.936658 0.115936 0.365929 0.893272 0.982094 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+127884 3863.05 -2047.98 756.821 2973.72 -769.109 -1110.66 633.87 476.557 2250.8 
+
+
+Output img
+525.422 4166.87 -1028.71 708.246 -1739.11 10.2858 -839.756 266.964 321.726 -426.067 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.30 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.16 [s]
+Instructions = 1316
+InstructionsPerSecond = 8483
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 85523
+
+[ x86 ]
+RealTime = 0.27 [s]
+Instructions = 734435
+InstructionsPerSecond = 2715794
+
+Hits Percent: 1.69377% 
+Size = 512 Epsilon = 0.01
+Platform 0 : Multi2Sim
+
+Original Input Real
+214.253 215.376 137.769 36.6612 246.846 239.784 29.6796 93.6777 228.678 251.416 
+
+
+Original Input Img
+0.836925 0.841314 0.538161 0.143208 0.964241 0.936658 0.115936 0.365929 0.893272 0.982094 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134509 -964.706 113.026 1208.38 3929.37 1362.29 -513.162 2058.53 -2138.88 61.9375 
+
+
+Output img
+525.422 -186.333 -4415.16 -109.515 -1887.16 -410.09 -354.253 1790.83 -625.319 1182.59 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.32 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.17 [s]
+Instructions = 1316
+InstructionsPerSecond = 7551
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 76120
+
+[ x86 ]
+RealTime = 0.29 [s]
+Instructions = 734311
+InstructionsPerSecond = 2528576
+
+Hits Percent: 1.68953% 
+Size = 1024 Epsilon = 0.01
+Platform 0 : Multi2Sim
+
+Original Input Real
+214.253 215.376 137.769 36.6612 246.846 239.784 29.6796 93.6777 228.678 251.416 
+
+
+Original Input Img
+0.836925 0.841314 0.538161 0.143208 0.964241 0.936658 0.115936 0.365929 0.893272 0.982094 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+134509 -964.706 113.026 1208.38 3929.37 1362.29 -513.162 2058.53 -2138.88 61.9375 
+
+
+Output img
+525.422 -186.333 -4415.16 -109.515 -1887.16 -410.09 -354.253 1790.83 -625.319 1182.59 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.34 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.18 [s]
+Instructions = 1316
+InstructionsPerSecond = 7218
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 72766
+
+[ x86 ]
+RealTime = 0.31 [s]
+Instructions = 734292
+InstructionsPerSecond = 2400690
+
+Hits Percent: 1.68953% 
+Size = 16 Epsilon = 1
+Platform 0 : Multi2Sim
+
+Original Input Real
+50.0562 65.4673 87.2235 118.646 230.368 40.3225 122.11 41.6894 50.9366 17.0662 
+
+
+Original Input Img
+0.195532 0.255732 0.340717 0.46346 0.899876 0.15751 0.476991 0.162849 0.198971 0.066665 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+133928 -1175.53 -413.967 1665.73 2055.21 -676.404 -313.676 -324.324 -2948.56 734.247 
+
+
+Output img
+515.46 2708.82 1065.4 663.816 -1331.27 -246.112 2502.5 -2079.51 2373.15 1439.34 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.29 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9441
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 95176
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 734526
+InstructionsPerSecond = 2777477
+
+Hits Percent: 7.27049% 
+Size = 32 Epsilon = 1
+Platform 0 : Multi2Sim
+
+Original Input Real
+50.0562 65.4673 87.2235 118.646 230.368 40.3225 122.11 41.6894 50.9366 17.0662 
+
+
+Original Input Img
+0.195532 0.255732 0.340717 0.46346 0.899876 0.15751 0.476991 0.162849 0.198971 0.066665 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+133928 -1319.5 -420.141 1682.76 2479.59 -712.074 -485.729 -760.369 -2960.7 659.845 
+
+
+Output img
+486.445 2690.96 961.851 645.892 -504.639 -441.278 2692.27 -2161.28 2372.73 1524.19 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9579
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 96573
+
+[ x86 ]
+RealTime = 0.25 [s]
+Instructions = 734465
+InstructionsPerSecond = 2904447
+
+Hits Percent: 8.31216% 
+Size = 64 Epsilon = 1
+Platform 0 : Multi2Sim
+
+Original Input Real
+50.0562 65.4673 87.2235 118.646 230.368 40.3225 122.11 41.6894 50.9366 17.0662 
+
+
+Original Input Img
+0.195532 0.255732 0.340717 0.46346 0.899876 0.15751 0.476991 0.162849 0.198971 0.066665 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+133928 -1319.5 -436.929 1423.21 2477.47 -848.01 -474.114 -447.791 -2953.57 723.354 
+
+
+Output img
+477.854 2599.1 960.335 690.006 -239.739 -645.71 2420.31 -1822.5 2368.84 1367.02 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.28 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.14 [s]
+Instructions = 1316
+InstructionsPerSecond = 9336
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 94115
+
+[ x86 ]
+RealTime = 0.26 [s]
+Instructions = 734313
+InstructionsPerSecond = 2878101
+
+Hits Percent: 9.53591% 
+Size = 128 Epsilon = 1
+Platform 0 : Multi2Sim
+
+Original Input Real
+50.0562 65.4673 87.2235 118.646 230.368 40.3225 122.11 41.6894 50.9366 17.0662 
+
+
+Original Input Img
+0.195532 0.255732 0.340717 0.46346 0.899876 0.15751 0.476991 0.162849 0.198971 0.066665 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+133928 -1319.5 -436.929 1423.21 2117.1 -499.184 -474.664 -386.12 -2932.59 697.198 
+
+
+Output img
+473.142 2571.7 961.572 795.66 -995.376 -330.932 2323.09 -2191.49 2367.04 1406.69 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.30 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.15 [s]
+Instructions = 1316
+InstructionsPerSecond = 8770
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 88408
+
+[ x86 ]
+RealTime = 0.27 [s]
+Instructions = 734242
+InstructionsPerSecond = 2735198
+
+Hits Percent: 11.8606% 
+Size = 256 Epsilon = 1
+Platform 0 : Multi2Sim
+
+Original Input Real
+140.921 170.231 36.0786 199.581 84.2792 224.095 85.3701 243.757 0.21312 165.412 
+
+
+Original Input Img
+0.550472 0.664967 0.140932 0.779615 0.329216 0.87537 0.333477 0.952176 0.000832499 0.646141 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+131350 1094.24 402.52 -766.343 1983.75 -1044.7 -1782.3 965.367 1138.34 -1594.57 
+
+
+Output img
+405.308 2861.22 54.8462 -2715.02 -539.66 1897.59 -1518.32 940.424 -739.146 991.047 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.31 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.16 [s]
+Instructions = 1316
+InstructionsPerSecond = 8300
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 83674
+
+[ x86 ]
+RealTime = 0.27 [s]
+Instructions = 734280
+InstructionsPerSecond = 2672626
+
+Hits Percent: 12.7329% 
+Size = 512 Epsilon = 1
+Platform 0 : Multi2Sim
+
+Original Input Real
+140.921 170.231 36.0786 199.581 84.2792 224.095 85.3701 243.757 0.21312 165.412 
+
+
+Original Input Img
+0.550472 0.664967 0.140932 0.779615 0.329216 0.87537 0.333477 0.952176 0.000832499 0.646141 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+131350 1094.24 402.52 -766.343 1983.75 -1044.7 -1782.3 965.367 1138.34 -1594.57 
+
+
+Output img
+405.308 2861.22 54.8462 -2715.02 -539.66 1897.59 -1518.32 940.424 -739.146 991.047 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.31 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.17 [s]
+Instructions = 1316
+InstructionsPerSecond = 7883
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 79474
+
+[ x86 ]
+RealTime = 0.28 [s]
+Instructions = 734300
+InstructionsPerSecond = 2619086
+
+Hits Percent: 12.8091% 
+Size = 1024 Epsilon = 1
+Platform 0 : Multi2Sim
+
+Original Input Real
+140.921 170.231 36.0786 199.581 84.2792 224.095 85.3701 243.757 0.21312 165.412 
+
+
+Original Input Img
+0.550472 0.664967 0.140932 0.779615 0.329216 0.87537 0.333477 0.952176 0.000832499 0.646141 
+
+
+Selected Platform Vendor : Multi2Sim
+Device 0 : Multi2Sim Southern Islands GPU Model
+Executing kernel for 1 iterations
+-------------------------------------------
+
+Output real
+131350 1094.24 402.52 -766.343 1983.75 -1044.7 -1782.3 965.367 1138.34 -1594.57 
+
+
+Output img
+405.308 2861.22 54.8462 -2715.02 -539.66 1897.59 -1518.32 940.424 -739.146 991.047 
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 0.31 [s]
+SimEnd = ContextsFinished
+SimTime = 13266.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+
+[ SouthernIslands ]
+RealTime = 0.16 [s]
+Instructions = 1316
+InstructionsPerSecond = 7990
+NDRangeCount = 1
+WorkGroupCount = 1
+BranchInstructions = 0
+LDSInstructions = 256
+ScalarALUInstructions = 49
+ScalarMemInstructions = 6
+VectorALUInstructions = 989
+VectorMemInstructions = 16
+SimTime = 13267.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 13267
+CyclesPerSecond = 80551
+
+[ x86 ]
+RealTime = 0.28 [s]
+Instructions = 734260
+InstructionsPerSecond = 2649486
+
+Hits Percent: 12.8091% 

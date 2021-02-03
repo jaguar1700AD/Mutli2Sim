@@ -505,7 +505,7 @@ void MainLoop()
 }
 
 
-void DumpStatisticsSummary(std::ostream &os = std::cerr)
+void DumpStatisticsSummary(std::ostream &os = std::cout)
 {
 	// No summary dumped if no simulation was run
 	if (m2s_loop_iterations < 2)
@@ -725,7 +725,7 @@ int main(int argc, char **argv)
 		// ................................................................................................................................................
 		
 		ifstream fin; 
-		fin.open("/tmp/multi2sim/src/lut_config_private"); 
+		fin.open("/tmp/git-repo/multi2sim/src/lut_config_private"); 
 		float eps; int size;
 		fin >> size; fin >> eps;
 		fin.close();
@@ -736,16 +736,21 @@ int main(int argc, char **argv)
 		// Run main program
 		int v = MainProgram(argc, argv);
 			
-		/*
+		
 		vector <vector<lut>>* vec = SI::WorkItem::table;
+		long long int num_hits = 0, tot_ops = 0;
         	for(int i = 0; i < (*vec).size(); i++)
         	{
                 	for(int j = 0; j < (*vec)[i].size(); j++)
                 	{
-                        	cout << "Hits " << i << ", " << j << " : " << (*vec)[i][j].get_num_hits() << " / " << (*vec)[i][j].get_num_ops() << endl;
-                	}	 
-        	}*/
+                        	//cout << "Hits " << i << ", " << j << " : " << (*vec)[i][j].get_num_hits() << " / " << (*vec)[i][j].get_num_ops() << endl;
+                		num_hits += (*vec)[i][j].get_num_hits();
+				tot_ops += (*vec)[i][j].get_num_ops();
+			}	 
+        	}
+		cout << "Hits Percent: " << 100.0 * num_hits / tot_ops << "% "<< endl;
 		
+		/*
 		int num = SI::SimdUnit::total_gap.size();
 		long long int tot_times = 0;
 		for(int i = 0; i < num; i++)
@@ -754,6 +759,7 @@ int main(int argc, char **argv)
 			cout << "Avg Call Gap: " << SI::SimdUnit::total_gap[i] / (double)SI::SimdUnit::total_times[i] << " Total times called: " << SI::SimdUnit::total_times[i] << endl;
 		}
 		cout << "Overall total times: " << tot_times << endl;		
+		*/		
 
 		return v;
 

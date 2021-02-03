@@ -108,7 +108,7 @@ public:
 	virtual mem::Module *getEntryModule(int index);
 
 	/// Dump the statistics summary for the timing simulator.
-	virtual void DumpSummary(std::ostream &os) const { }
+	virtual void DumpSummary(std::ostream &os = std::cout) const { }
 
 	/// Dump report for the timing simulator.
 	virtual void DumpReport() const { }

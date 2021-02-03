@@ -204,7 +204,7 @@ void SimdUnit::Execute()
 		int start_lut = (cu_num * 4 * 16) + (simd_num * 16);
 		
 		vector <vector <lut>>* store = WorkItem::table;
-		int max_sub = 0;
+		int min_sub = 100;
 		
 		for(int i = start_lut; i < start_lut + 16; i++)
 		{
@@ -227,10 +227,10 @@ void SimdUnit::Execute()
 				if (hits[3] == true) sub += 1;
 			}
 	
-			if (sub > max_sub) max_sub = sub;
+			if (sub < min_sub) min_sub = sub;
 		}
 		//cout << "Min Sub: " << min_sub << endl;
-		uop->execute_ready -= max_sub;
+		uop->execute_ready -= min_sub;
 
 		// My Code 
         	{
